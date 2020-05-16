@@ -1,0 +1,46 @@
+h1, h3 {
+	letter-spacing: 5px;
+	padding-top: 50px;
+  }
+  
+  h6 {
+	letter-spacing: 3px;
+  }
+  
+  .hr-light {
+	border-top: 3px solid #fff;
+	width: 80px;
+  }
+  
+  /* footer
+  ========================================*/
+  
+  
+  footer {
+	  background: #A4A4A4;
+  }
+  
+  .footer__item {
+	  width: 100%;
+	  padding: 15px 0;
+	  text-align: center;
+	  margin: 0 auto
+  }
+  
+  .footer__icon {
+	  padding: 0 20px;
+  }
+  
+  .footer__text {
+	  text-align: center;
+	  color: #000;
+	  font-weight: 700;
+	  margin: 0 auto
+  }
+  .footer__item a {
+	  opacity: .5;
+  }
+  .footer__item a:hover {
+	  opacity: 1;
+  }
+  

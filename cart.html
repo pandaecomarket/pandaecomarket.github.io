@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/cart.css">
+	<title>PANDA Ecomarket</title>
+	<link rel="icon" href="img/logo_textmin.png" type="img/png">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link href="css/jqcart.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jqcart.min.js"></script>
+
+	<script>
+	$(function(){
+	'use strict';	
+	// инициализация плагина
+	$.jqCart({
+			buttons: '.add_item',
+			handler: './php/handler.php',
+			cartLabel: '.label-place',
+			visibleLabel: true,
+			openByAdding: false,
+			currency: 'грн;'
+	});	
+
+	});
+	</script>
+</head>
+<body>
+	<header id="header" class="header">
+		<nav class="navbar navbar-expand-lg navbar-dark default-color-dark fixed-top z-depth-2">
+			<a class="navbar-brand" href="index.html"><img src="img/logo_textmin.png" alt="Logo"> <strong>PANDA ECOMARKET</strong></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    		aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="basicExampleNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+				<a class="nav-link" href="catalog.html">Каталог
+					<span class="sr-only">(current)</span>
+				</a>
+				</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Категорії</a>
+						<div class="dropdown-menu dropdown-primary default-color-dark" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item text-light default-color-dark" href="catalog.html#hair">Догляд за волоссям</a>
+							<a class="dropdown-item text-light default-color-dark" href="catalog.html#face">Догляд за обличчям</a>
+							<a class="dropdown-item text-light default-color-dark" href="catalog.html#foot">Догляд за тілом</a>
+							<a class="dropdown-item text-light default-color-dark" href="catalog.html#child">Для дитячої шкіри</a>
+							<a class="dropdown-item text-light default-color-dark" href="#">Добра їжа</a>
+							<a class="dropdown-item text-light default-color-dark" href="#">Фітокомплекси</a>
+							<a class="dropdown-item text-light default-color-dark" href="#">Побутова нехімія</a>
+							<a class="dropdown-item text-light default-color-dark" href="#">Натуральна косметика</a>
+						</div>
+					</li>
+				<li class="nav-item">
+				<a class="nav-link" href="pay.html">Оплата і доставка</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="contacts.html">Контакти</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart fa-2x"></i></a>
+				</li>
+			</ul>
+			<!-- Links -->		
+		</nav>
+	</header>
+
+	<section class="cartbuy">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="label-place"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="row">
+					<div class="footer__item">
+						<a href="https://www.instagram.com/panda_ecomarket/?hl=ru" target="_blank" class="footer__icon"><img src="img/in.png" width="40px" height="40px" alt="inst"></a>
+						<a href="https://www.facebook.com/panda.ecomarket" target="_blank" class="footer__icon"><img src="img/fb.png" width="40px" height="40px" alt="fbook"></a>
+						<a href="#" class="footer__icon"><img src="img/tw.png" width="40px" height="40px" alt="twit"></a>
+					</div>
+					<div class="footer__text">
+						<p class="ukr">Ukraine, 2020</p>
+					</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
